@@ -142,25 +142,29 @@ print("\027[" .. color.black[1] .. ";" .. color.green[2] .. "m\n➡➡[•• ا
 end
 create_config_auto()
 
-file = io.open("Globla", "w")
+file = io.open("run", "w")  
 file:write([[
+#!/bin/bash 
 token="]]..Token_..[["
-COUNTER=1
 while(true) do
-while true ; do
-
-curl "https://api.telegram.org/bot"$token"/sendmessage" -F
-./TG -s ./GLOBLA.lua $@ --bot=$token
-
-sleep 5
+rm -fr ../.telegram-cli
+echo -e ""
+echo -e ""
+./tg -s ./GLOBLA.lua $@ --bot=$token
 done
-let COUNTER=COUNTER+1
+]])  
+file:close()  
+file = io.open("RUN", "w")  
+file:write([[
+killall screen
+while(true) do
+rm -fr ../.telegram-cli
+screen ./run
 done
-
-]])
-file:close()
-sleep(1)
-os.execute(' screen -S Globla ./Globla')
+]])  
+file:close() 
+os.execute('rm -fr $HOME/.telegram-cli')
+os.execute('./RUN')
 end
 local serialize_to_file = function(data, file, uglify)
 file = io.open(file, "w+")
