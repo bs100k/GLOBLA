@@ -1,4 +1,4 @@
-# <p align="center" style="color:#cb3349" >🃏 سـورس العالمي 🃏
+# <p align="center" style="color:#cb3349" >👤 سـورس العالمي 👤
 
 # <p align="center" style="color: #14635c;" > GLOBLA حصريا من قناة  📡
 
