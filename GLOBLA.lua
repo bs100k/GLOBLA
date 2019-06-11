@@ -7765,7 +7765,7 @@ local text =  [[
 
 🔘┇افتح ترمنال السيرفر ونسخ هذا »
 
-`git clone https://github.com/DevGlobla/GLOBLA.git && cd GLOBLA && chmod +x tg && chmod +x RUN && chmod +x run && ./run`
+`SOURCE GLOBLA `
 
 🔘┇بعدها يطلب منك تخلي المعلومات
 
@@ -7776,7 +7776,7 @@ local text =  [[
 🔘┇مبروك تنصب سورس على Tg الجديد
 
 🔘┇كود الرن :
-`cd GLOBLA;./RUN` 
+`cd GLOBLA` 
 ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉
 📡┇[Channel Globla](t.me/Globla)
 ]]
